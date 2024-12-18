@@ -1,0 +1,42 @@
+﻿  pch.cpp
+  Lib.cpp
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(96,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(99,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(102,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(105,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(108,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(111,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(114,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(117,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(120,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(123,32): warning C4244: +=: преобразование "double" в "__int64", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(134,19): warning C4244: инициализация: преобразование "__int64" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(171,22): warning C4244: +=: преобразование "double" в "unsigned int", возможна потеря данных
+  (компиляция исходного файла "/Lib.cpp")
+  
+D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Lib\Lib.cpp(161,8): warning C4101: buffer: неиспользованная локальная переменная
+  (компиляция исходного файла "/Lib.cpp")
+  
+  Lib.vcxproj -> D:\cpo_course\-ourseProjectKPO\course\DSV-2024\Debug\Lib.lib

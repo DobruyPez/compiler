@@ -1,0 +1,64 @@
+#pragma comment(lib, "...\\Debug\\Lib.lib")
+#include "stdafx.h" 
+#include "CodeGeneration.h"
+#include "semantics.h"
+#include "../Lib/Lib.cpp"
+int _tmain(int argc, _TCHAR ** argv)
+{
+	setlocale(LC_ALL, "rus");
+	Log::LOG log = Log::INITLOG;
+	Log::LOG new_lg = Log::INITLOG;
+	try
+	{
+		Parm::PARM parm = Parm::getparm(argc, argv);
+		log = Log::getlog(parm.log);
+		Log::WriteLog(log);
+		Log::WriteParm(log, parm);
+		In::IN in = In::getin(parm.in, parm.out);
+		Lex::LEX lextable = Lex::lexAnaliz(log, in);
+		std::cout << "Лексический анализ выполнен без ошибок" << std::endl;
+		LT::showTable(lextable.lextable, log);
+		IT::showTable(lextable.idtable, log);
+		MFST::Mfst mfst(lextable, GRB::getGreibach());
+		if (mfst.start(log) && mfst.savededucation()) {
+			mfst.printrules(log);
+			std::cout << "Cинтаксический анализ выполнен без ошибок" << std::endl;
+			semantics::semantics(lextable);
+			std::cout << "Семантический анализ выполнен без ошибок" << std::endl;
+			LT::LexTable str = LT::Create(LT_MAXSIZE);
+			str = PN::PolishNotation(0, lextable.lextable, lextable.idtable);
+
+			new_lg = Log::getlog(parm.out);
+			CodeGeneration::CodeGeneration(lextable, new_lg);
+			std::cout << "Генерация кода выполнена без ошибок" << std::endl;
+			PN::showPolishNotation(str, log);
+		}
+		else
+			std::cout << "Синтаксический анализ не выполнен" << std::endl;
+		LT::showTable(lextable.lextable, log);
+		Log::WriteIn(log, in);
+		Log::Close(log);
+	}
+	catch (Error::ERROR e)
+	{
+		if (e.id == 600) {
+			cout << e.id << ": шаг " << e.index.line << ", " << e.message << endl;
+		}
+		else {
+			cout << e.id << ": строка " << e.index.line << ", " << e.message << endl;
+			Log::WriteError(log, e);
+		}
+	}
+	catch (const std::exception& e)
+	{
+		std::cerr << "Стандартное исключение: " << e.what() << std::endl;
+		Log::WriteError(log, Error::ERROR{ 999, "std::exception", {0, 0} });
+	}
+	catch (...)
+	{
+		std::cerr << "Неизвестная ошибка!" << std::endl;
+		Log::WriteError(log, Error::ERROR{ 1000, "Unknown error", {0, 0} });
+	}
+
+	return 0;
+}
