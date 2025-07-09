@@ -10,7 +10,7 @@
   <p align="center">
     A compiler that transforms custom syntax code into executable MASM assembly. 
     <br />
-    <a href="https://github.com/DobruyPez/WallsOfFate"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/DobruyPez/compiler"><strong>Explore the docs »</strong></a>
   </p>
 </div>
 
@@ -97,7 +97,7 @@ To get a local copy up and running follow these simple example steps.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## Usage
-Full language specification available in <a href="https://github.com/DobruyPez/WallsOfFate"><strong>Пояснительная записка.docx</strong></a>
+Full language specification available in <a href="https://github.com/DobruyPez/compiler"><strong>Пояснительная записка.docx</strong></a>
 1. Place your source code in in.txt
 2. Run the compiler:
    ```sh
@@ -144,7 +144,7 @@ Distributed under the Unlicense License.
 ## Contact
 
 Stas Drozd - [LinkedIn](www.linkedin.com/in/stas-drozd-278ba4373) - stasdrozd791@gmail.com
-Project Link: [https://github.com/DobruyPez/WallsOfFate.git](https://github.com/DobruyPez/WallsOfFate.git)
+Project Link: [https://github.com/DobruyPez/compiler](https://github.com/DobruyPez/compiler)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
