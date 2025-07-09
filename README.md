@@ -111,7 +111,9 @@ To get a local copy up and running follow these simple example steps.
    link /SUBSYSTEM:CONSOLE main.obj
    main.exe
    ```
-Notice! Full language specification available in <a href="https://github.com/DobruyPez/compiler"><strong>Пояснительная записка.docx</strong></a>
+```Notice
+Full language specification available in <a href="https://github.com/DobruyPez/compiler"><strong>Пояснительная записка.docx</strong></a>
+```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
