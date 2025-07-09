@@ -112,8 +112,8 @@ To get a local copy up and running follow these simple example steps.
    main.exe
    ```
 ```Notice
-Full language specification available in <a href="https://github.com/DobruyPez/compiler"><strong>Пояснительная записка.docx</strong></a>
 ```
+Full language specification available in <a href="https://github.com/DobruyPez/compiler"><strong>Пояснительная записка.docx</strong></a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
